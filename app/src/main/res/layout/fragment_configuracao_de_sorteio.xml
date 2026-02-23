@@ -59,6 +59,7 @@
                 android:layout_height="8dp" />
 
             <EditText
+                android:id="@+id/etAmountNumbers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_edittext"
@@ -96,6 +97,7 @@
                 android:layout_height="8dp" />
 
             <EditText
+                android:id="@+id/etInitialLimit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_edittext"
@@ -133,12 +135,13 @@
                 android:layout_height="8dp" />
 
             <EditText
+                android:id="@+id/etFinalLimit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_edittext"
                 android:inputType="number"
                 android:padding="16dp"
-                android:text="@string/limite_inicial_pre_definido"
+                android:text="100"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.Sora.DisplaySmall"
                 android:textColor="@android:color/white" />

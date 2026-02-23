@@ -19,11 +19,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvInfoContent"
+        android:id="@+id/tvDrawNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/primeiro_resultado"
+        tools:text="@string/primeiro_resultado"
         android:textColor="@color/content_secondary"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.RobotoMono.Overline"
