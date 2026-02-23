@@ -20,7 +20,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/ivBackground"
@@ -62,7 +62,7 @@
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fcvContent"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="36dp"
                 app:defaultNavHost="true"
                 app:navGraph="@navigation/main_content_nav_graph"
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="36dp"
                 android:background="@drawable/bg_button"
-                android:drawableEnd="@drawable/ic_ir"
+                android:drawableEnd="@drawable/ic_sortear"
                 android:paddingHorizontal="48dp"
                 android:text="@string/sortear"
                 app:layout_constraintEnd_toEndOf="parent"
