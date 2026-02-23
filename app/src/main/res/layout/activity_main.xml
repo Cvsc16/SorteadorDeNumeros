@@ -16,8 +16,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -32,16 +31,18 @@
                 android:src="@drawable/bg_principal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
 
             <ImageView
                 android:id="@+id/ivLogo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="48dp"
                 android:contentDescription="@string/imagem_logo"
                 android:src="@drawable/img_logo"
-                android:layout_margin="48dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -63,6 +64,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_margin="36dp"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/main_content_nav_graph"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/btnDraw"
                 app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 
@@ -75,21 +81,24 @@
                 android:drawableEnd="@drawable/ic_ir"
                 android:paddingHorizontal="48dp"
                 android:text="@string/sortear"
-                android:textAppearance="@style/TextAppearance.RobotoFlex.LabelMedium"
-                app:layout_constraintBottom_toBottomOf="@+id/ivBackground" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fcvContent" />
 
             <TextView
                 android:id="@+id/tvFirstInfoTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/ic_chat"
-                android:drawablePadding="8dp"
-                android:textColor="@color/content_brand"
-                android:drawableTint="@color/content_brand"
                 android:layout_marginHorizontal="36dp"
                 android:layout_marginTop="24dp"
+                android:drawablePadding="8dp"
                 android:text="@string/como_funciona_o_sorteador_de_numeros"
                 android:textAppearance="@style/TextAppearance.RobotoFlex.ParagraphMedium"
+                android:textColor="@color/content_brand"
+                app:drawableStartCompat="@drawable/ic_chat"
+                app:drawableTint="@color/content_brand"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnDraw" />
 
             <TextView
@@ -97,45 +106,45 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="36dp"
-                android:drawablePadding="8dp"
                 android:paddingStart="36dp"
                 android:text="@string/o_sorteador_utiliza_um_algoritmo_conteudo"
                 android:textAppearance="@style/TextAppearance.RobotoFlex.ParagraphMedium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvFirstInfoTitle" />
 
             <TextView
                 android:id="@+id/tvSecondInfoTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/ic_chat"
-                android:drawablePadding="8dp"
-                android:textColor="@color/content_brand"
-                android:drawableTint="@color/content_brand"
                 android:layout_marginHorizontal="36dp"
                 android:layout_marginTop="24dp"
+                android:drawablePadding="8dp"
                 android:text="@string/posso_escolher_o_intervalo_dos_numeros"
                 android:textAppearance="@style/TextAppearance.RobotoFlex.ParagraphMedium"
+                android:textColor="@color/content_brand"
+                app:drawableStartCompat="@drawable/ic_chat"
+                app:drawableTint="@color/content_brand"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvFirstInfoContent" />
 
             <TextView
-                android:id="@+id/tvSecodInfoContent"
+                android:id="@+id/tvSecondInfoContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="36dp"
                 android:layout_marginBottom="36dp"
-                android:drawablePadding="8dp"
                 android:paddingStart="36dp"
                 android:text="@string/sim_voce_pode_definir_os_valores_conteudo"
                 android:textAppearance="@style/TextAppearance.RobotoFlex.ParagraphMedium"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvSecondInfoTitle" />
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
     </androidx.core.widget.NestedScrollView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
