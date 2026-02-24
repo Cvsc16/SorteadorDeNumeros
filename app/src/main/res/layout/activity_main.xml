@@ -138,7 +138,6 @@
                 android:paddingStart="36dp"
                 android:text="@string/sim_voce_pode_definir_os_valores_conteudo"
                 android:textAppearance="@style/TextAppearance.RobotoFlex.ParagraphMedium"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvSecondInfoTitle" />

@@ -22,11 +22,10 @@
         android:id="@+id/tvDrawNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        tools:text="@string/primeiro_resultado"
+        tools:text="@string/_1_resultado"
+        android:textAppearance="@style/TextAppearance.RobotoMono.Overline"
         android:textColor="@color/content_secondary"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.RobotoMono.Overline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvInfoTitle" />
@@ -35,9 +34,12 @@
         android:id="@+id/flowResultNumbersHelper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        app:flow_horizontalGap="16dp"
+        app:flow_maxElementsWrap="3"
+        app:flow_wrapMode="chain"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvInfoContent" />
+        app:layout_constraintTop_toBottomOf="@id/tvDrawNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
